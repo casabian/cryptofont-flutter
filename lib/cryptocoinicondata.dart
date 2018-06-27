@@ -8,6 +8,6 @@ class CryptoCoinIconData extends IconData{
   super(
     codePoint,
     fontFamily: 'CryptoCoins',
-    fontPackage: 'cryptocoins',
+    fontPackage: 'cryptocoins_icons',
   );
 }
