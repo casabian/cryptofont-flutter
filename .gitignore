@@ -3,7 +3,7 @@
 .idea
 .packages
 .pub/
-
+.history/
 build/
 ios/.generated/
 ios/Flutter/Generated.xcconfig
