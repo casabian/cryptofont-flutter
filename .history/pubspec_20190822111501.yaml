@@ -1,0 +1,19 @@
+name: cryptocoins_icons
+description: Cryptocoins Icons by AllienWorks for Flutter
+version: 0.1.0
+author: James Naylor <jamesnaylor85@gmail.com>
+homepage: https://www.github.com/euronay/cryptocoins-icons-flutter
+
+environment:
+  sdk: '>=1.19.0 <2.0.0'
+  flutter: '>=0.1.2'
+
+dependencies:
+  flutter:
+    sdk: flutter 
+
+flutter:
+  fonts:
+    - family: CryptoCoins
+      fonts:
+        - asset: webfont/cryptocoins.ttf
