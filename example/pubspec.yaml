@@ -1,0 +1,11 @@
+name: crypto_font_icons_example
+description: Crypto Font Flutter Gallery
+
+dependencies:
+  flutter:
+    sdk: flutter
+  crypto_font_icons:
+    path: ../
+
+flutter:
+  uses-material-design: true
