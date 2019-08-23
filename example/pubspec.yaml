@@ -5,7 +5,7 @@ dependencies:
   flutter:
     sdk: flutter
   crypto_font_icons:
-    path: ../
-
+    git:
+      url: https://github.com/casabian/cryptofont-flutter.git
 flutter:
   uses-material-design: true

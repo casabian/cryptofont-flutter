@@ -10,7 +10,7 @@ class CryptoFontGalleryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Font Awesome Flutter Gallery',
+      title: 'CryptoFont Flutter Gallery',
       theme: new ThemeData.light().copyWith(
         iconTheme: new IconThemeData(size: 36.0, color: Colors.black87),
         textTheme: new TextTheme(
