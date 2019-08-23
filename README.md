@@ -13,7 +13,7 @@ crypto_font_icons: 0.1.0
 ## Usage
 
 ```dart
-import 'package:cryptocoins_icons/cryptocoins_icons.dart';
+import 'package:crypto_font_icons/crypto_font_icons.dart';
 
 class IconButton extends StatelessWidget {
   Widget build(BuildContext context) {
