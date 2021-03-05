@@ -11,20 +11,20 @@ class CryptoFontGalleryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'CryptoFont Flutter Gallery',
-      theme: new ThemeData.light().copyWith(
-        iconTheme: new IconThemeData(size: 36.0, color: Colors.black87),
-        textTheme: new TextTheme(
-          body1: new TextStyle(fontSize: 16.0, color: Colors.black87),
+      theme: ThemeData.light().copyWith(
+        iconTheme: IconThemeData(size: 36.0, color: Colors.black87),
+        textTheme: TextTheme(
+          bodyText1: TextStyle(fontSize: 16.0, color: Colors.black87),
         ),
       ),
-      home: new CryptoFontGalleryHome(),
+      home: CryptoFontGalleryHome(),
     );
   }
 }
 
 class CryptoFontGalleryHome extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => new CryptoFontGalleryHomeState();
+  State<StatefulWidget> createState() => CryptoFontGalleryHomeState();
 }
 
 class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
@@ -97,7 +97,7 @@ class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
         new IconButton(
             icon: new Icon(Icons.search),
             onPressed: () {
-              ModalRoute.of(context).addLocalHistoryEntry(
+              ModalRoute.of(context)?.addLocalHistoryEntry(
                 new LocalHistoryEntry(
                   onRemove: () {
                     setState(() {

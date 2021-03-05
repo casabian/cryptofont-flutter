@@ -16,6 +16,7 @@
 *.iws
 .idea/
 
+
 # Visual Studio Code related
 .vscode/
 
@@ -26,6 +27,7 @@
 .packages
 .pub-cache/
 .pub/
+.fvm/
 build/
 
 # Android related
