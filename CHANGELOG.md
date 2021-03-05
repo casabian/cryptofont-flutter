@@ -12,3 +12,7 @@
 
 - stable release
 - migrate to null safety
+
+## 1.0.0+1
+
+- update usage description for null safety

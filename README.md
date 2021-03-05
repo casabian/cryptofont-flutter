@@ -1,13 +1,13 @@
 # CryptoFont Icons for Flutter
 
-Bringing @AMPoellmann's CryptoFont to Flutter
+Bringing [AMPoellmann's](https://github.com/AlexanderPoellmann/CryptoFont) CryptoFont to Flutter. This library is upgrade to use the new null safety features by flutter.
 
 ## Installation
 
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 
 ```yaml
-crypto_font_icons: 0.1.0
+crypto_font_icons: 1.0.0+1
 ```
 
 ## Usage
