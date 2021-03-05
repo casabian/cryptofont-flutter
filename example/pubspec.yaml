@@ -1,11 +1,14 @@
 name: crypto_font_icons_example
 description: Crypto Font Flutter Gallery
 
+environment:
+  sdk: ">=2.10.0 <3.0.0"
+
 dependencies:
   flutter:
     sdk: flutter
   crypto_font_icons:
     git:
-      url: https://github.com/casabian/cryptofont-flutter.git
+      url: ../
 flutter:
   uses-material-design: true
