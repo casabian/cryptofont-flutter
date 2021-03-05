@@ -1,11 +1,10 @@
 name: crypto_font_icons
 description: CryptoFont Icons by https://cryptofont.com/#icons for Flutter
 version: 0.1.0+1
-author: Sebastian Geschke <sebastian.geschke@gmail.com>
 homepage: https://www.github.com/casabian/cryptofont-flutter
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
