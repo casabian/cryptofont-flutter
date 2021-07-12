@@ -12,10 +12,7 @@ class ExampleIcon implements Comparable {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is ExampleIcon &&
-          runtimeType == other.runtimeType &&
-          iconData == other.iconData &&
-          title == other.title;
+      other is ExampleIcon && runtimeType == other.runtimeType && iconData == other.iconData && title == other.title;
 
   @override
   int get hashCode => iconData.hashCode ^ title.hashCode;

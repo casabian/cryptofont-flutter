@@ -52,18 +52,18 @@ class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
               onTap: () {
                 Navigator.push(
                   context,
-                  new MaterialPageRoute<Null>(
+                  MaterialPageRoute<Null>(
                     builder: (BuildContext context) {
-                      return new GestureDetector(
+                      return GestureDetector(
                         onTap: () {
                           Navigator.of(context).pop();
                         },
-                        child: new Container(
+                        child: Container(
                           color: Colors.white,
-                          child: new SizedBox.expand(
-                            child: new Hero(
+                          child: SizedBox.expand(
+                            child: Hero(
                               tag: icon,
-                              child: new Icon(
+                              child: Icon(
                                 icon.iconData,
                                 size: 100.0,
                               ),
@@ -75,13 +75,13 @@ class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
                   ),
                 );
               },
-              child: new Column(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  new Hero(tag: icon, child: new Icon(icon.iconData)),
-                  new Container(
-                    padding: new EdgeInsets.only(top: 16.0),
-                    child: new Text(icon.title),
+                  Hero(tag: icon, child: Icon(icon.iconData)),
+                  Container(
+                    padding: EdgeInsets.only(top: 16.0),
+                    child: Text(icon.title),
                   )
                 ],
               ),
@@ -91,14 +91,14 @@ class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
   }
 
   AppBar _titleBar() {
-    return new AppBar(
-      title: new Text("CryptoFont Flutter Gallery"),
+    return AppBar(
+      title: Text("CryptoFont Flutter Gallery"),
       actions: [
-        new IconButton(
-            icon: new Icon(Icons.search),
+        IconButton(
+            icon: Icon(Icons.search),
             onPressed: () {
               ModalRoute.of(context)?.addLocalHistoryEntry(
-                new LocalHistoryEntry(
+                LocalHistoryEntry(
                   onRemove: () {
                     setState(() {
                       _searchTerm = "";
@@ -117,9 +117,9 @@ class CryptoFontGalleryHomeState extends State<CryptoFontGalleryHome> {
   }
 
   AppBar _searchBar(BuildContext context) {
-    return new AppBar(
-      leading: new IconButton(
-        icon: new Icon(Icons.arrow_back),
+    return AppBar(
+      leading: IconButton(
+        icon: Icon(Icons.arrow_back),
         onPressed: () {
           setState(
             () {
