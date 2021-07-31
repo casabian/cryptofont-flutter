@@ -4,6 +4,109 @@ import 'package:crypto_font_icons/crypto_font_icon_data.dart';
 
 /// Predefined set of crypto icons
 class CryptoFontIcons {
+  static Map<String, CryptoFontIconData> _cryptoMap = {
+    'ADC': ADC,
+    'AEON': AEON,
+    'AMP': AMP,
+    'ANC': ANC,
+    'ARDR': ARDR,
+    'AUR': AUR,
+    'BAY': BAY,
+    'BCN': BCN,
+    'BRK': BRK,
+    'BRX': BRX,
+    'BSD': BSD,
+    'BTA': BTA,
+    'BTC': BTC,
+    'BTC_ALT': BTC_ALT,
+    'BTCD': BTCD,
+    'BTCD': BTS,
+    'CLAM': CLAM,
+    'CLOAK': CLOAK,
+    'DASH': DASH,
+    'DCR': DCR,
+    'DGB': DGB,
+    'DGD': DGD,
+    'DGX': DGX,
+    'DMD': DMD,
+    'DOGE': DOGE,
+    'EMC': EMC,
+    'ERC': ERC,
+    'ETC': ETC,
+    'ETH': ETH,
+    'FCT': FCT,
+    'FLO': FLO,
+    'FRK': FRK,
+    'FTC': FTC,
+    'GAME': GAME,
+    'GLD': GLD,
+    'GNT': GNT,
+    'GRC': GRC,
+    'GRS': GRS,
+    'HEAT': HEAT,
+    'ICN': ICN,
+    'IFC': IFC,
+    'INCNT': INCNT,
+    'IOC': IOC,
+    'KMD': KMD,
+    'KOBO': KOBO,
+    'KORE': KORE,
+    'LBC': LBC,
+    'LDOGE': LDOGE,
+    'LSK': LSK,
+    'LTC': LTC,
+    'MAID': MAID,
+    'MINT': MINT,
+    'MONA': MONA,
+    'MUE': MUE,
+    'NEOS': NEOS,
+    'NLG': NLG,
+    'NMC': NMC,
+    'NOTE': NOTE,
+    'NUC': NUC,
+    'NXT': NXT,
+    'OK': OK,
+    'OMNI': OMNI,
+    'PINK': PINK,
+    'PIVX': PIVX,
+    'POT': POT,
+    'PPC': PPC,
+    'QRK': QRK,
+    'RBY': RBY,
+    'RDD': RDD,
+    'REP': REP,
+    'RISE': RISE,
+    'SJCX': SJCX,
+    'SLS': SLS,
+    'STEEM': STEEM,
+    'STRAT': STRAT,
+    'SYS': SYS,
+    'TRIG': TRIG,
+    'UBQ': UBQ,
+    'UNITY': UNITY,
+    'USDT': USDT,
+    'VRC': VRC,
+    'VTC': VTC,
+    'WAVES': WAVES,
+    'XCP': XCP,
+    'XEM': XEM,
+    'XMR': XMR,
+    'XRP': XRP,
+    'ZEC': ZEC,
+  };
+
+  // Returns the Icon for the correct crypto. if the Icon doesn't exist it returns null
+  static dynamic getIcon(String key) {
+    if (containsCrypto(key))
+      return _cryptoMap[key];
+    else
+      return null;
+  }
+
+  static bool containsCrypto(String name) {
+    return _cryptoMap.containsKey(name);
+  }
+
   /// ADC Icon
   static const CryptoFontIconData ADC = CryptoFontIconData(0xf000);
 
